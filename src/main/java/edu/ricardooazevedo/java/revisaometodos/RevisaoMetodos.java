@@ -1,33 +1,33 @@
 
 package edu.ricardooazevedo.java.revisaometodos;
 
+import edu.ricardooazevedo.java.revisaometodos.model.SmartTv;
 /**
  *
  * @author ricar
  */
 
-//Exemplos de métodos:
+
 public class RevisaoMetodos {
 
     public static void main(String[] args) {
+        SmartTv smartTv = new SmartTv();
+       
         
+        smartTv.ligar();
+        smartTv.aumentarVolume();
+        smartTv.aumentarVolume();
+        smartTv.aumentarVolume();
+        smartTv.diminuirVolume();
+        smartTv.diminuirVolume();
+        smartTv.adiantarCanal();
+        smartTv.adiantarCanal();
+        smartTv.voltarCanal();
+        
+        
+        System.out.println("Status:");
+        System.out.println("Ligada: "+smartTv.isLigada());
+        System.out.println("Canal: "+smartTv.getCanal());
+        System.out.println("Volume: "+smartTv.getVolume());
     }
-    
-    /*
-      Encapsulamento (public/protected/private)
-       |   Tipo que vai retornar (int/float/double/String/boolean...)
-       |    |   Nome do método
-       |    |    |         Parametros do metodo e suas variaveis(Existem metodos que não necessitam de parametros para seu funvionamento)   
-       |    |    |                      |
-       |    |    |                      |
-       V    V    V  |-------------------------------------|
-    public int somar(int primeiroNumero, int segundoNumero){
-
-        //A funcionalidade do método
-    
-        return ... (oque o metodo vai retornar/ se for void, não precisa ter o return!)
-    }
-    */
-    
-    
 }
